@@ -133,6 +133,103 @@ font-size:40px;
 .hero-text p{
 font-size:15px;
 }
+} 
+  /* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+.hero{
+padding:70px 40px;
+gap:40px;
+text-align:center;
+}
+
+.hero-img,
+.hero-text{
+flex:100%;
+max-width:100%;
+}
+
+.hero-img img{
+max-width:340px;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.hero{
+padding:60px 20px;
+}
+
+.hero-text h1{
+font-size:38px;
+line-height:1.3;
+}
+
+.hero-text p{
+font-size:15px;
+}
+
+.hero-img img{
+max-width:280px;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.feature-box{
+padding:22px;
+}
+
+.btn-main{
+width:100%;
+text-align:center;
+padding:14px 20px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+.hero{
+padding:50px 15px;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
+.hero-text p{
+font-size:14px;
+line-height:1.9;
+}
+
+.hero-img img{
+max-width:220px;
+}
+
+.feature-box i{
+font-size:28px;
+}
+
+.feature-box h3{
+font-size:20px;
+}
+
 }
 </style>
 </head>
