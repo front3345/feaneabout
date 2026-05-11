@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feane About </title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+line-height:1.8;
+}
+
+:root{
+--main-yellow:#f1c40f;
+--yellow-hover:#d4ac0d;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:80px 10%;
+gap:60px;
+flex-wrap:wrap;
+background:linear-gradient(to right,#111,#1b1b1b);
+}
+
+.hero-img{
+flex:1;
+text-align:center;
+}
+
+.hero-img img{
+width:100%;
+max-width:420px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:var(--main-yellow);
+}
+
+.hero-text p{
+font-size:18px;
+color:#ddd;
+margin-bottom:25px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.feature-box{
+background:#1d1d1d;
+padding:25px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(241,196,15,0.3);
+}
+
+.feature-box i{
+font-size:35px;
+color:var(--main-yellow);
+margin-bottom:15px;
+}
+
+.feature-box h3{
+margin-bottom:10px;
+}
+
+.btn-main{
+display:inline-block;
+margin-top:35px;
+padding:14px 28px;
+background:var(--main-yellow);
+color:white;
+text-decoration:none;
+border-radius:14px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-main:hover{
+background:var(--yellow-hover);
+transform:scale(1.03);
+}
+
+@media(max-width:768px){
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+.hero-text p{
+font-size:15px;
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="hero-img">
+<img src="layers.png" alt="Burger">
+</div>
+
+<div class="hero-text">
+<h1>More About <span>Feane</span></h1>
+
+<p>
+At Feane, we believe food is more than just a meal — it's an experience.
+We create every dish using carefully selected ingredients, rich flavors,
+and recipes made with passion.
+</p>
+
+<p>
+From handcrafted burgers and cheesy pizzas to creamy pasta and crispy sides,
+our mission is to serve unforgettable food with the highest quality and best taste.
+</p>
+
+<div class="features">
+
+<div class="feature-box">
+<i class="fas fa-burger"></i>
+<h3>Fresh Ingredients</h3>
+<p>Prepared daily with premium quality ingredients.</p>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-pizza-slice"></i>
+<h3>Best Recipes</h3>
+<p>Special flavors inspired by international cuisine.</p>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-truck"></i>
+<h3>Fast Delivery</h3>
+<p>Quick and reliable delivery right to your door.</p>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-heart"></i>
+<h3>Made With Passion</h3>
+<p>Every meal is crafted with love and attention.</p>
+</div>
+
+</div>
+
+<a href="index.html" class="btn-main">Back To Home</a>
+
+</div>
+
+</section>
+
+</body>
+</html>
